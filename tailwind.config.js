@@ -14,6 +14,7 @@ const config = {
   },
   darkMode: "class",
   plugins: [
+    require('tailwindcss-animated'),
     nextui({
       themes: {
         dark: {

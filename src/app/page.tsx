@@ -1,15 +1,19 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import { Footer, Header, Sidebar } from '@/ui'
+import { CTA, Footer, Header } from '@/ui'
+import { Clients, Heading, Services, Testimonial, Ubication, WhoWeAre } from '@/components/landing'
 
 export default function Home() {
   return (
     <>
     <Header/>
-    <Sidebar/>
-    <main>
-      <p>main</p>
-    </main>
+      <main>
+        <Heading/>
+        <WhoWeAre/>
+        <Services/>
+        <Ubication/>
+        <Clients/>
+        <Testimonial/>
+        <CTA/>
+      </main>
     <Footer/>
   </>
   )
