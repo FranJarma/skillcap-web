@@ -15,16 +15,15 @@ export const Services = () => {
   });
   const [isLoaded, setIsLoaded] = useState(false);
 
-  setTimeout(() => {
-    setIsLoaded(true);
-  }, 5000)
-  // const toggleLoad = () => {
-  //   setIsLoaded(!isLoaded);
-  // };
-
-  // useEffect(() => {
-  //   toggleLoad();
-  // }, [toggleLoad]);
+  // setTimeout(() => {
+  //   setIsLoaded(true);
+  // }, 5000)
+  
+  useEffect(() => {
+      setTimeout(() => {
+        setIsLoaded(true);
+      }, 1000)
+  }, [isLoaded]);
 
   const services = [
     {
@@ -65,54 +64,53 @@ export const Services = () => {
     },
 ];
   return (
-    <section ref={ref}>
-      <section id="services" className={`flex flex-col ${inView ? 'inline animate-fade animate-once animate-ease-in-out' : 'hidden'} md:flex-row justify-between m-20`}>
+    <div ref={ref}>
+      <section id="services" className={`grid ${inView ? 'grid-cols-1 md:grid-cols-3 animate-fade animate-once animate-ease-in-out' : 'hidden'} gap-10 justify-between m-20 md:flex md:flex-row`}>
         <section className='flex flex-col justify-center items-center gap-10 md:m-20'>
             <h2 className='text-3xl md:text-5xl font-bold text-center'>Nuestros servicios</h2>
             <section className='grid gap-10 grid-cols-1 xl:grid-cols-3'>
               {
                 services.map(service => (
-                  <>
-                  <Card
-                    key={service.name}
-                    isBlurred
-                    className="border-none bg-background/60 dark:bg-foreground-100 max-w-[610px]"
-                    shadow="sm"
-                  >
-                    <CardBody>
-                        <section className="flex flex-col col-span-6 md:col-span-8">
-                          <section className="flex justify-between items-start">
-                            <section className="flex flex-col gap-5">
-                              <Skeleton isLoaded={isLoaded}>
-                                <Image
-                                  alt="Album cover"
-                                  className="object-cover min-h-fit w-screen rounded-2xl opacity-50 hover:scale-105 duration-500 hover:opacity-100 md:h-96"
-                                  src={service.img.src}
-                                  sizes="100vw"
-                                  height={100}
-                                  width={100}
-                                />
-                              </Skeleton>
-                              <Skeleton isLoaded={isLoaded}>
-                                <h3 className="font-semibold text-foreground/90 text-2xl">{service.name}</h3>
-                              </Skeleton>
-                              <Skeleton isLoaded={isLoaded}>
-                                <hr className='w-6/12'/>
-                              </Skeleton>
-                              <Skeleton isLoaded={isLoaded}>
-                                <p className="text-sm font-medium mt-2 text-justify">{service.description}</p>
-                              </Skeleton>
+                  <React.Fragment key={service.name}>
+                    <Card
+                      isBlurred
+                      className="border-none bg-background/60 dark:bg-foreground-100 max-w-[610px]"
+                      shadow="sm"
+                    >
+                      <CardBody>
+                          <section className="flex flex-col col-span-6 md:col-span-8">
+                            <section className="flex justify-between items-start">
+                              <section className="flex flex-col gap-5">
+                                <Skeleton isLoaded={isLoaded}>
+                                  <Image
+                                    alt="Album cover"
+                                    className="object-cover min-h-fit w-screen rounded-2xl opacity-50 hover:scale-105 duration-500 hover:opacity-100 md:h-96"
+                                    src={service.img.src}
+                                    sizes="100vw"
+                                    height={100}
+                                    width={100}
+                                  />
+                                </Skeleton>
+                                <Skeleton isLoaded={isLoaded}>
+                                  <h3 className="font-semibold text-foreground/90 text-2xl">{service.name}</h3>
+                                </Skeleton>
+                                <Skeleton isLoaded={isLoaded}>
+                                  <hr className='w-6/12'/>
+                                </Skeleton>
+                                <Skeleton isLoaded={isLoaded}>
+                                  <p className="text-sm font-medium mt-2 text-justify">{service.description}</p>
+                                </Skeleton>
+                              </section>
                             </section>
                           </section>
-                        </section>
-                    </CardBody>
+                      </CardBody>
                   </Card>
-                  </>
+                  </React.Fragment>
                 ))
               }
             </section>
         </section>
       </section>
-    </section>
+    </div>
   )
 }

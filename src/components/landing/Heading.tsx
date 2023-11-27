@@ -1,3 +1,5 @@
+'use client'
+import { Button, Link } from '@nextui-org/react'
 import HeadingImage from './../../../public/HeadingImage.jpg'
 import Image from 'next/image'
 import React from 'react'
@@ -6,9 +8,12 @@ export const Heading = () => {
   return (
     <>
         <section className='flex justify-between'>
-            <section className='flex flex-col justify-center items-center gap-10 m-20'>
-                <h2 className='text-3xl md:text-5xl font-bold tracking-wide'>¿En búsqueda de mejorar tu rendimiento deportivo?</h2>
-                <p className='text-xl md:text-2xl text-foreground-600 antialiased'>Capturamos momentos cruciales y jugadas destacadas para que mejores tu desempeño como deportista.</p>
+            <section className='flex flex-col justify-center items-center gap-10 m-20 text-clip tracking-normal'>
+                <h2 className='text-3xl !leading-snug md:text-5xl font-bold tracking-wide'>¿En búsqueda de mejorar tu <span className='bg-teal-700 text-white'>rendimiento deportivo?</span></h2>
+                <p className='text-xl md:text-2xl text-foreground-600 text-justify antialiased'>Capturamos momentos cruciales y jugadas destacadas para que mejores tu desempeño como deportista.</p>
+                <Button size='lg' className='rounded-md p-7 mt-5 text-xl' as={Link} color="primary" href="/videos">
+                    Ver videos
+                </Button>
             </section>
             <article className='hidden md:block'>
                 <Image className='opacity-60' src={HeadingImage} alt="Heading image"/>

@@ -19,29 +19,30 @@ export const Header = () => {
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             className="sm:hidden"
           />
-          <NavbarBrand>
+          <NavbarBrand
+            className="hidden md:flex">
             {
               useLogo()
             }
           </NavbarBrand>
-            <div className='hidden md:flex gap-4'>
-              {menuItems.map((item, index) => (
-              <NavbarItem className='hover:border-b-2' key={`${item}-${index}`}>
-                <Link color="foreground" href={item.href} onClick={scrollIntoView}>
+          <div className='hidden md:flex gap-4 min-h-full'>
+            {menuItems.map((item, index) => (
+              !item.button ?
+              <NavbarItem className='flex border-teal-600 hover:border-b-2' key={`${item}-${index}`}>
+                <Link className='text-center justify-center items-center' color="foreground" href={item.href} onClick={scrollIntoView}>
                   {item.label}
                 </Link>
               </NavbarItem>
-              ))}
-            </div>
+              :
+              <NavbarItem className='flex items-center' key={`${item}-${index}`}>
+                <Button className='uppercase ml-48' color='primary' key={`${item}-${index}`}>{item.label}</Button>
+              </NavbarItem>
+            ))}
+          </div>
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden md:block">
             <ThemeSwitcher/>
-          </NavbarItem>
-          <NavbarItem className="hidden md:block">
-            <Button className='rounded-sm' as={Link} color="primary" href="/videos" variant="ghost">
-              Ver videos
-            </Button>
           </NavbarItem>
         </NavbarContent>
         <Sidebar/>

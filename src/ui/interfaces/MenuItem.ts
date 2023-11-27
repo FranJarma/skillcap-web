@@ -1,6 +1,7 @@
 export interface MenuItem {
     label: string;
     href: string;
+    button?: boolean;
   }
 
 export const menuItems: MenuItem [] = [
@@ -17,7 +18,8 @@ export const menuItems: MenuItem [] = [
     href: "#ubication"
 },
 {
-    label: "Clientes",
-    href: "#clients"
+    label: "Quiero contratar el servicio",
+    href: "#clients",
+    button: true
 }
 ];

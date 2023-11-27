@@ -7,8 +7,9 @@ export const useLogo = (width = 100, height = 100) => {
     const { theme } = useTheme()
     const LogoWhite = () => {
       return (
-        <Link href='/'>
+        <Link className='block' href='/'>
           <Image
+          priority
           width={width}
           height={height}
           src="/LogoWhite.png"
@@ -21,6 +22,7 @@ export const useLogo = (width = 100, height = 100) => {
       return (
         <Link href='/'>
           <Image
+          priority
           width={width}
           height={height}
           src="/Logo.png"
