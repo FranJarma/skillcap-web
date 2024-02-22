@@ -1,5 +1,5 @@
-import { CTA, Footer, Header } from '@/ui'
-import { Heading, Services, Ubication, WhoWeAre } from '@/components/landing'
+import { Footer, Header } from '@/ui'
+import { Cta, Heading, Services, Ubication, WhoWeAre } from '@/components/landing'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <WhoWeAre/>
         <Services/>
         <Ubication/>
-        <CTA/>
+        <Cta/>
       </main>
     <Footer/>
   </>

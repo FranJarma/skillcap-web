@@ -7,7 +7,7 @@ import React from 'react'
 export const Heading = () => {
   return (
     <>
-        <section className='flex justify-between'>
+        <section className='flex justify-between bg-foreground-50'>
             <section className='flex flex-col justify-center items-center gap-10 m-20 text-clip tracking-normal'>
                 <h2 className='text-3xl !leading-snug md:text-5xl font-bold tracking-wide'>¿En búsqueda de mejorar tu <span className='bg-teal-700 text-white'>rendimiento deportivo?</span></h2>
                 <p className='text-xl md:text-2xl text-foreground-600 text-justify antialiased'>Capturamos momentos cruciales y jugadas destacadas para que mejores tu desempeño como deportista.</p>
