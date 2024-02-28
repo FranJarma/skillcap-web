@@ -9,10 +9,16 @@ import Rating from './../../../public/Rating.jpg'
 import Trophy from './../../../public/Trophy.jpg'
 import { useInView } from 'react-intersection-observer';
 import { Card, CardBody, Skeleton, toggle } from '@nextui-org/react'
+import { Slider } from '@/ui'
+import { useSmallScreen } from '@/hooks/useSmallScreen'
 export const Services = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+  const { isSmallScreen } = useSmallScreen();
+
+  console.log(isSmallScreen);
+  
   const [isLoaded, setIsLoaded] = useState(false);
 
   // setTimeout(() => {
@@ -72,6 +78,7 @@ export const Services = () => {
               {
                 services.map(service => (
                   <React.Fragment key={service.name}>
+                    {/* <Slider></Slider> */}
                     <Card
                       isBlurred
                       className="border-none bg-background/60 dark:bg-foreground-100 max-w-[610px]"

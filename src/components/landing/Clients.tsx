@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { Card, CardBody, Skeleton } from '@nextui-org/react';
-import { Slider } from '@/ui/Carousel';
+import { Slider } from '@/ui/Slider';
 import { useInView } from 'react-intersection-observer';
 import ClubNorte from 'public/ClubNorte.png';
 import IlCalcio from 'public/IlCalcio.png';

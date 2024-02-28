@@ -7,7 +7,6 @@ const config = {
     // ...
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.{js,ts,tsx}",
-    "./node_modules/flowbite-react/**/*.js"
     // "./**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
@@ -16,7 +15,6 @@ const config = {
   darkMode: "class",
   plugins: [
     require('tailwindcss-animated'),
-    require("flowbite/plugin"),
     nextui({
       themes: {
         dark: {

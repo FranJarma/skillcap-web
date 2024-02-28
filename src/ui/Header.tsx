@@ -13,7 +13,7 @@ export const Header = () => {
 
   return (
     <>
-    <Navbar isBordered shouldHideOnScroll>
+    <Navbar isBordered>
         <NavbarContent justify="center">
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
