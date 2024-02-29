@@ -7,7 +7,7 @@ import HeadingImage from 'public/HeadingImage.jpg'
 import { useInView } from 'react-intersection-observer';
 import { ToastContainer, toast } from 'react-toastify';
 import { useTheme } from 'next-themes';
-import { CheckIcon } from '@/ui/CheckIcon';
+import { CheckIcon } from '@/ui/icons/CheckIcon';
 export const Cta = () => {
   const { theme } = useTheme();
   const [ref, inView] = useInView({

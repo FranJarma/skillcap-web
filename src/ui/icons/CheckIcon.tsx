@@ -1,5 +1,5 @@
 import React from "react";
-export const CheckIcon = (props) => {
+export const CheckIcon = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width={18}

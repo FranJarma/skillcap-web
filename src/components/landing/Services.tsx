@@ -9,15 +9,12 @@ import Rating from './../../../public/Rating.jpg'
 import Trophy from './../../../public/Trophy.jpg'
 import { useInView } from 'react-intersection-observer';
 import { Card, CardBody, Skeleton, toggle } from '@nextui-org/react'
-import { Slider } from '@/ui'
 import { useSmallScreen } from '@/hooks/useSmallScreen'
 export const Services = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-  const { isSmallScreen } = useSmallScreen();
-
-  console.log(isSmallScreen);
+  const isSmallScreen = useSmallScreen(1024);
   
   const [isLoaded, setIsLoaded] = useState(false);
 

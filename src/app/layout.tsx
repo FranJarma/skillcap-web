@@ -6,7 +6,7 @@ import { Providers } from './providers'
 const exo = Exo({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Skillcap',
+  title: 'Skillcap - Tu solución para mejorar tu desempeño deportivo',
   description: 'Capturamos momentos cruciales y jugadas destacadas para que mejores tu desempeño como deportista',
 }
 
