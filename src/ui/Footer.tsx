@@ -2,11 +2,13 @@
 import React from 'react';
 import { useSmallScreen } from '@/hooks/useSmallScreen';
 import { Accordion, AccordionItem, Avatar } from "@nextui-org/react";
-import { InstagramIcon, TiktokIcon, YoutubeIcon } from './icons';
+import { Instagram, Tiktok, Youtube } from './icons';
 import Link from 'next/link';
 interface Item {
-  subtitle?: string;
+  href?: string;
   icon?: React.JSX.Element;
+  subtitle?: string;
+  targetBlank?: boolean;
 }
 
 interface ListItemProps {
@@ -17,12 +19,15 @@ const WHO_WHE_ARE = {
   title: 'Nosotros',
   items: [
     {
+      href: 'about-us',
       subtitle: 'Sobre nosotros'
     },
     {
+      href: 'services',
       subtitle: '¿Qué servicios ofrecemos?'
     },
     {
+      href: 'where-are-we',
       subtitle: '¿En dónde nos encontramos?'
     }
   ]
@@ -32,16 +37,22 @@ const SOCIALS = {
   title: 'Redes sociales',
   items: [
     {
+      href: "https://instagram.com/Skillcap",
+      icon: <Instagram/>,
       subtitle: 'Instagram',
-      icon: <InstagramIcon/>
+      targetBlank: true
     },
     {
+      icon: <Tiktok/>,
+      href: "https://tiktok.com/Skillcap",
       subtitle: 'Tiktok',
-      icon: <TiktokIcon/>
+      targetBlank: true
     },
     {
+      href: "https://youtube.com/Skillcap",
+      icon: <Youtube/>,
       subtitle: 'Youtube',
-      icon: <YoutubeIcon/>
+      targetBlank: true
     }
   ]
 };
@@ -50,12 +61,15 @@ const IMPORTANT_INFO = {
   title: 'Información importante',
   items: [
     {
+      href: '/privacy',
       subtitle: 'Políticas de privacidad'
     },
     {
+      href: 'terms-of-service',
       subtitle: 'Términos y condiciones'
     },
     {
+      href: 'cookies-policies',
       subtitle: 'Políticas de cookies'
     }
   ]
@@ -66,7 +80,9 @@ const ListItem: React.FC<ListItemProps> = ({ items }) => {
     <section className='flex flex-col m-4 gap-4'>
       {items.map((item, index) => (
         <React.Fragment key={index}>
-          <li className='flex gap-2 list-none hover:animate-pulse animate-once animate-duration-500 animate-delay-0 animate-ease-in animate-normal animate-fill-forwards'>{item.icon}<Link href="test">{item.subtitle}</Link></li>
+          <li className='flex gap-2 list-none hover:animate-pulse animate-once animate-duration-500 animate-delay-0 animate-ease-in animate-normal animate-fill-forwards'>
+            {item.icon}<Link href={item.href ?? ''} target={item.targetBlank ? '_blank' : ''}>{item.subtitle}</Link>
+          </li>
         </React.Fragment>
       ))}
     </section>

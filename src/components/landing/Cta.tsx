@@ -7,7 +7,7 @@ import HeadingImage from 'public/HeadingImage.jpg'
 import { useInView } from 'react-intersection-observer';
 import { ToastContainer, toast } from 'react-toastify';
 import { useTheme } from 'next-themes';
-import { CheckIcon } from '@/ui/icons/CheckIcon';
+import { Check } from '@/ui/icons/index';
 export const Cta = () => {
   const { theme } = useTheme();
   const [ref, inView] = useInView({
@@ -33,7 +33,7 @@ export const Cta = () => {
                 { emailSent ?
 
                   <section className={`bg-teal-700 border-b-4 border-foreground-500 text-white w-full p-14 animate-fade animate-once animate-ease-in-out`}>
-                    <p className='text-lg flex justify-center align-center text-center'><CheckIcon/> Nos comunicaremos muy pronto</p>
+                    <p className='text-lg flex justify-center align-center text-center'><Check/> Nos comunicaremos muy pronto</p>
                   </section>
                   :
                   <React.Fragment>
@@ -42,7 +42,7 @@ export const Cta = () => {
                       className="w-full"
                       disabled={emailSent}
                       label="Email"
-                      defaultValue="test@nextui.org"
+                      defaultValue="test@skillcap.com"
                       endContent={ <Button isDisabled={emailSent} color='primary' onClick={handleEmailSent}>Enviar</Button> }
                   />
                   <ToastContainer

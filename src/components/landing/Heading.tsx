@@ -3,10 +3,16 @@ import { Button, Link } from '@nextui-org/react'
 import HeadingImage from './../../../public/HeadingImage.jpg'
 import Image from 'next/image'
 import React from 'react'
+import { WhatsApp } from '@/ui/icons'
 
 export const Heading = () => {
   return (
     <>
+    <section className='fixed z-10 bottom-5 right-5'>
+        <Link target='_blank' href='https://api.whatsapp.com/send?phone=543874450922&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20Skillcap!%20%F0%9F%93%B8'>
+            <WhatsApp/>
+        </Link>
+    </section>
         <section className='flex justify-between bg-foreground-50'>
             <section className='flex flex-col justify-center items-center gap-10 m-20 text-clip tracking-normal'>
                 <h2 className='text-3xl !leading-snug md:text-5xl font-bold tracking-wide'>¿En búsqueda de mejorar tu <span className='bg-teal-700 text-white'>rendimiento deportivo?</span></h2>

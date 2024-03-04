@@ -3,8 +3,7 @@
 import { Switch } from "@nextui-org/react";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from 'react';
-import { SunIcon } from "./icons/SunIcon";
-import { MoonIcon } from "./icons/MoonIcon";
+import { Sun, Moon } from "./icons/index";
 
 export function ThemeSwitcher() {
   const { theme, setTheme } = useTheme()
@@ -22,8 +21,8 @@ export function ThemeSwitcher() {
       onValueChange={(isSelected) => isSelected ? setTheme('dark') : setTheme('light')}
       size="lg"
       color="default"
-      startContent={<SunIcon />}
-      endContent={<MoonIcon />}
+      startContent={<Sun />}
+      endContent={<Moon />}
       onChange={(e) => (e.target as HTMLInputElement).value ? setTheme('dark') : setTheme('light') }
       title="Modo oscuro"
       value={theme}
