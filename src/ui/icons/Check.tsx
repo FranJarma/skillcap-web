@@ -1,11 +1,13 @@
 import React from "react";
 export const Check = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => {
+  const { color, height, width } = props;
+
   return (
     <svg
-      width={18}
-      height={18}
+      fill={color ?? 'none'}
+      height={height}
       viewBox="0 0 24 24"
-      fill="none"
+      width={width}
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

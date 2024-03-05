@@ -1,12 +1,12 @@
 'use client'
 import React from 'react';
-import { useSmallScreen } from '@/hooks/useSmallScreen';
-import { Accordion, AccordionItem, Avatar } from "@nextui-org/react";
-import { Instagram, Tiktok, Youtube } from './icons';
 import Link from 'next/link';
+import { useSmallScreen } from '@/hooks/useSmallScreen';
+import { Accordion, AccordionItem } from "@nextui-org/react";
+import { Icons, renderSvg } from '@/helpers';
 interface Item {
   href?: string;
-  icon?: React.JSX.Element;
+  icon?: React.JSX.Element | null;
   subtitle?: string;
   targetBlank?: boolean;
 }
@@ -38,19 +38,19 @@ const SOCIALS = {
   items: [
     {
       href: "https://instagram.com/Skillcap",
-      icon: <Instagram/>,
+      icon: renderSvg(Icons.Instagram, 18, 18),
       subtitle: 'Instagram',
       targetBlank: true
     },
     {
-      icon: <Tiktok/>,
       href: "https://tiktok.com/Skillcap",
+      icon: renderSvg(Icons.Tiktok, 18, 18),
       subtitle: 'Tiktok',
       targetBlank: true
     },
     {
       href: "https://youtube.com/Skillcap",
-      icon: <Youtube/>,
+      icon: renderSvg(Icons.Youtube, 18, 18),
       subtitle: 'Youtube',
       targetBlank: true
     }

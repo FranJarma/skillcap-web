@@ -4,8 +4,8 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenu
 import { ThemeSwitcher } from './ThemeSwitcher';
 import { Sidebar } from './Sidebar';
 import { menuItems } from './interfaces/MenuItem';
-import { scrollIntoView } from '@/helpers/scrollIntoView';
-import { useLogo } from '@/hooks/useLogo';
+import { scrollIntoView } from '@/helpers/index';
+import { useLogo } from '@/hooks/index';
 
 export const Header = () => {
 
