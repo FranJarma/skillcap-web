@@ -68,10 +68,10 @@ export const Services = () => {
 ];
   return (
     <div ref={ref}>
-      <section id="services" className={`grid ${inView ? 'grid-cols-1 md:grid-cols-3 animate-fade animate-once animate-ease-in-out' : 'hidden'} gap-10 justify-between m-20 md:flex md:flex-row`}>
-        <section className='flex flex-col justify-center items-center gap-10 md:m-20'>
+      <section id="services" className={`flex flex-col ${inView ? 'inline animate-fade animate-once animate-ease-in-out' : 'hidden'} m-10 md:m-40`}>
+        <section className='flex flex-col justify-center items-center gap-10'>
             <h2 className='text-3xl md:text-5xl font-bold text-center'>Nuestros servicios</h2>
-            <section className='grid gap-10 grid-cols-1 xl:grid-cols-3'>
+            <section className='grid gap-10 grid-cols-1 xl:grid-cols-2'>
               {
                 services.map(service => (
                   <React.Fragment key={service.name}>

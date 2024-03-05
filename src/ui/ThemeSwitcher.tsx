@@ -16,7 +16,6 @@ export function ThemeSwitcher() {
   return (
     <Switch
       defaultChecked
-      className="mt-5 md:mt-0"
       isSelected={theme === 'dark' ? true : false}
       onValueChange={(isSelected) => isSelected ? setTheme('dark') : setTheme('light')}
       size="lg"
