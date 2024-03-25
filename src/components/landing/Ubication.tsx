@@ -10,7 +10,7 @@ export const Ubication = () => {
   });
   return (
     <div ref={ref}>
-      <section id="ubication" className={`flex flex-col ${inView ? 'inline animate-fade animate-once animate-ease-in-out' : 'hidden'} m-10 md:m-40`}>
+      <section id="ubication" className={`flex flex-col ${inView ? 'inline animate-fade animate-once animate-ease-in-out' : 'invisible'} m-10 md:m-40`}>
           <h2 className='text-3xl md:text-5xl font-bold text-center'>Ubicación</h2>
           <Image
               alt="Album cover"

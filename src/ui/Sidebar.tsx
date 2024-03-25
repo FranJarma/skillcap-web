@@ -12,7 +12,7 @@ export const Sidebar = () => {
             <NavbarMenuItem className='hover:bg-primary' key={`${item}-${index}`}>
               <Link
                 className="w-full p-5 hover:text-primary-foreground"
-                href={item.href}
+                href={item.toPage}
                 size="lg"
               >
                 {item.label}

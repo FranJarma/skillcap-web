@@ -1,20 +1,25 @@
 export interface MenuItem {
-    label: string;
-    href?: string;
     button?: boolean;
+    href?: string;
+    label: string;
+    target?: string;
+    toPage?: string;
   }
 
 export const menuItems: MenuItem [] = [
     {
         label: "Quiénes somos",
-        href: "#who-we-are"
+        href: "#who-we-are",
+        toPage: "who-we-are"
     },
     {
         label: "Servicios",
-        href: "#services"
+        href: "#services",
+        toPage: "services"
     },
     {
         label: "Ubicación",
-        href: "#ubication"
+        href: "#ubication",
+        toPage: "ubication"
     }
 ];

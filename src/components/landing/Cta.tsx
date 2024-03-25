@@ -57,7 +57,7 @@ export const Cta = () => {
 
   return (
     <div ref={ref}>
-        <section id='cta' className={`flex bg-foreground-50 md:min-h-[1000px] ${inView ? 'inline animate-fade animate-once animate-ease-in-out' : 'hidden'}`}>
+        <section id='cta' className={`flex bg-foreground-50 md:min-h-[1000px] ${inView ? 'inline animate-fade animate-once animate-ease-in-out' : 'invisible'}`}>
             <picture className='hidden lg:block aspect-video'>
               <Image className='opacity-60 h-full' width={1200} src={FootballField} alt="master1305 freepik image"/>
             </picture>

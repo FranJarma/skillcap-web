@@ -68,7 +68,7 @@ export const Services = () => {
 ];
   return (
     <div ref={ref}>
-      <section id="services" className={`flex flex-col ${inView ? 'inline animate-fade animate-once animate-ease-in-out' : 'hidden'} m-10 md:m-40`}>
+      <section id="services" className={`flex flex-col ${inView ? 'inline animate-fade animate-once animate-ease-in-out' : 'invisible'} m-10 md:m-40`}>
         <section className='flex flex-col justify-center items-center gap-10'>
             <h2 className='text-3xl md:text-5xl font-bold text-center'>Nuestros servicios</h2>
             <section className='grid gap-10 grid-cols-1 xl:grid-cols-2'>
