@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-    font-family: 'Exo-Regular';
+  font-family: "Exo-Regular";
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
 
 html,
 body {

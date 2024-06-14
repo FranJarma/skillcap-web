@@ -6,6 +6,6 @@ export const scrollIntoView: MouseEventHandler<HTMLAnchorElement> = (e) => {
   if (href) {
     const id = href.substring(1);
     const element = document.getElementById(id);
-    if (element) element.scrollIntoView({ behavior: 'smooth' });
+    if (element) element.scrollIntoView({ behavior: "smooth" });
   }
 };

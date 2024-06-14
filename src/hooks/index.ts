@@ -1,2 +1,2 @@
-export * from './useLogo';
-export * from './useSmallScreen';
+export * from "./useLogo";
+export * from "./useSmallScreen";

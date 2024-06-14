@@ -1,5 +1,5 @@
-import { Footer, Header } from '@/ui';
-import React from 'react'
+import { Footer, Header } from "@/ui";
+import React from "react";
 
 const Ubication = () => {
   return (
@@ -9,9 +9,9 @@ const Ubication = () => {
           <h1>Ubication</h1>
         </main>
       </Header>
-      <Footer/>
+      <Footer />
     </React.Fragment>
-  )
-}
+  );
+};
 
 export default Ubication;

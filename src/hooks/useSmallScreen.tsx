@@ -1,26 +1,28 @@
-'use client'
-import { useEffect, useMemo, useState } from 'react'
+"use client";
+import { useEffect, useMemo, useState } from "react";
 export const useSmallScreen = (sizeToCheck: number) => {
-    const isClient = typeof window === 'object';
+  const isClient = typeof window === "object";
 
-    const [windowWidth, setWindowWidth] = useState(isClient ? window.innerWidth : 0);
+  const [windowWidth, setWindowWidth] = useState(
+    isClient ? window.innerWidth : 0
+  );
 
-    useEffect(() => {
-        if (!isClient) {
-            return;
-        }
+  useEffect(() => {
+    if (!isClient) {
+      return;
+    }
 
-        function handleResize() {
-            setWindowWidth(window.innerWidth);
-        }
-        
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, [isClient]);
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
 
-    const isSmallScreen = useMemo(() => {
-        return windowWidth <= sizeToCheck;
-    }, [windowWidth, sizeToCheck]);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [isClient]);
 
-    return isSmallScreen;
-}
+  const isSmallScreen = useMemo(() => {
+    return windowWidth <= sizeToCheck;
+  }, [windowWidth, sizeToCheck]);
+
+  return isSmallScreen;
+};

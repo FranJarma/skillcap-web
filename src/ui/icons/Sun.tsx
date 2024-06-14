@@ -1,5 +1,7 @@
 import React from "react";
-export const Sun = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+export const Sun = (
+  props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
+) => (
   <svg
     aria-hidden="true"
     focusable="false"

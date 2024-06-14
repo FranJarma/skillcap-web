@@ -1,5 +1,5 @@
-import { Footer, Header } from '@/ui';
-import React from 'react'
+import { Footer, Header } from "@/ui";
+import React from "react";
 
 const Services = () => {
   return (
@@ -9,9 +9,9 @@ const Services = () => {
           <h1>Services</h1>
         </main>
       </Header>
-      <Footer/>
-  </React.Fragment>
-  )
-}
+      <Footer />
+    </React.Fragment>
+  );
+};
 
 export default Services;
