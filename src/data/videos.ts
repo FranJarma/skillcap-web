@@ -1,0 +1,222 @@
+import { Video } from "@/components/videos/VideoList";
+
+export const videos: Video[] = [
+  {
+    id: "1",
+    title: "Mejores jugadas de fútbol",
+    url: "https://www.youtube.com/watch?v=video1",
+    rating: 4.5,
+    comments: [
+      "¡Increíble gol!",
+      "Este video es inspirador.",
+      "Qué buenos pases tienen.",
+    ],
+    thumbnail: "https://picsum.photos/id/1018/200/300",
+  },
+  {
+    id: "2",
+    title: "Resumen de la final de la Champions League",
+    url: "https://www.youtube.com/watch?v=video2",
+    rating: 4.7,
+    comments: [
+      "El mejor partido de la temporada.",
+      "Qué emoción en cada jugada.",
+    ],
+    thumbnail: "https://picsum.photos/id/1015/200/300",
+  },
+  {
+    id: "3",
+    title: "Mejores goles del año",
+    url: "https://www.youtube.com/watch?v=video3",
+    rating: 4.2,
+    comments: [
+      "Esos goles son increíbles.",
+      "Los jugadores están en su mejor momento.",
+    ],
+    thumbnail: "https://picsum.photos/id/1019/200/300",
+  },
+  {
+    id: "4",
+    title: "Recopilación de jugadas de baloncesto",
+    url: "https://www.youtube.com/watch?v=video4",
+    rating: 4.0,
+    comments: [
+      "Estos jugadores son impresionantes.",
+      "El baloncesto es mi deporte favorito.",
+    ],
+    thumbnail: "https://picsum.photos/id/1020/200/300",
+  },
+  {
+    id: "5",
+    title: "Los mejores momentos de tenis",
+    url: "https://www.youtube.com/watch?v=video5",
+    rating: 4.3,
+    comments: [
+      "Los puntos de este partido fueron épicos.",
+      "Me encanta ver tenis.",
+    ],
+    thumbnail: "https://picsum.photos/id/1021/200/300",
+  },
+  {
+    id: "6",
+    title: "Resumen de la Liga de Campeones de Rugby",
+    url: "https://www.youtube.com/watch?v=video6",
+    rating: 4.6,
+    comments: [
+      "Los equipos dieron todo en el campo.",
+      "El rugby es un deporte duro pero emocionante.",
+    ],
+    thumbnail: "https://picsum.photos/id/1022/200/300",
+  },
+  {
+    id: "7",
+    title: "Los mejores clavados en natación",
+    url: "https://www.youtube.com/watch?v=video7",
+    rating: 4.4,
+    comments: [
+      "Qué precisión en cada clavado.",
+      "Estos atletas son increíbles.",
+    ],
+    thumbnail: "https://picsum.photos/id/1023/200/300",
+  },
+  {
+    id: "8",
+    title: "Mejores momentos de atletismo",
+    url: "https://www.youtube.com/watch?v=video8",
+    rating: 4.1,
+    comments: [
+      "Los récords que se rompieron fueron asombrosos.",
+      "El atletismo es inspirador.",
+    ],
+    thumbnail: "https://picsum.photos/id/1024/200/300",
+  },
+  {
+    id: "9",
+    title: "Resumen de la Copa Mundial de Cricket",
+    url: "https://www.youtube.com/watch?v=video9",
+    rating: 4.8,
+    comments: [
+      "Cada jugada fue crucial.",
+      "El cricket es un deporte fascinante.",
+    ],
+    thumbnail: "https://picsum.photos/id/1025/200/300",
+  },
+  {
+    id: "10",
+    title: "Mejores momentos de voleibol",
+    url: "https://www.youtube.com/watch?v=video10",
+    rating: 4.2,
+    comments: [
+      "Estos jugadores tienen un gran trabajo en equipo.",
+      "El voleibol es rápido y emocionante.",
+    ],
+    thumbnail: "https://picsum.photos/id/1026/200/300",
+  },
+  {
+    id: "11",
+    title: "Recopilación de surf en las mejores olas",
+    url: "https://www.youtube.com/watch?v=video11",
+    rating: 4.5,
+    comments: ["Las olas en este video son épicas.", "El surf es mi pasión."],
+    thumbnail: "https://picsum.photos/id/1027/200/300",
+  },
+  {
+    id: "12",
+    title: "Mejores jugadas de hockey sobre hielo",
+    url: "https://www.youtube.com/watch?v=video12",
+    rating: 4.3,
+    comments: [
+      "Qué habilidades tienen estos jugadores.",
+      "El hockey sobre hielo es emocionante de ver.",
+    ],
+    thumbnail: "https://picsum.photos/id/1028/200/300",
+  },
+  {
+    id: "13",
+    title: "Resumen de la Liga Nacional de Béisbol",
+    url: "https://www.youtube.com/watch?v=video13",
+    rating: 4.6,
+    comments: [
+      "Este juego fue lleno de acción.",
+      "El béisbol siempre es emocionante.",
+    ],
+    thumbnail: "https://picsum.photos/id/1029/200/300",
+  },
+  {
+    id: "14",
+    title: "Los mejores tiros libres en balonmano",
+    url: "https://www.youtube.com/watch?v=video14",
+    rating: 4.4,
+    comments: [
+      "Qué precisión tienen estos jugadores.",
+      "El balonmano es un deporte subestimado pero emocionante.",
+    ],
+    thumbnail: "https://picsum.photos/id/1030/200/300",
+  },
+  {
+    id: "15",
+    title: "Mejores momentos de esgrima",
+    url: "https://www.youtube.com/watch?v=video15",
+    rating: 4.1,
+    comments: [
+      "La estrategia en este deporte es fascinante.",
+      "Estos atletas son increíbles con la espada.",
+    ],
+    thumbnail: "https://picsum.photos/id/1031/200/300",
+  },
+  {
+    id: "16",
+    title: "Resumen de la Copa del Mundo de Golf",
+    url: "https://www.youtube.com/watch?v=video16",
+    rating: 4.7,
+    comments: [
+      "Qué precisión en cada golpe.",
+      "El golf es un deporte lleno de habilidad.",
+    ],
+    thumbnail: "https://picsum.photos/id/1032/200/300",
+  },
+  {
+    id: "17",
+    title: "Mejores clavados en trampolín",
+    url: "https://www.youtube.com/watch?v=video17",
+    rating: 4.5,
+    comments: [
+      "Los clavados en este video son impresionantes.",
+      "El trampolín requiere mucha habilidad.",
+    ],
+    thumbnail: "https://picsum.photos/id/1033/200/300",
+  },
+  {
+    id: "18",
+    title: "Recopilación de saltos en esquí",
+    url: "https://www.youtube.com/watch?v=video18",
+    rating: 4.3,
+    comments: [
+      "Qué valentía tienen estos esquiadores.",
+      "Los saltos en esquí son emocionantes de ver.",
+    ],
+    thumbnail: "https://picsum.photos/id/1034/200/300",
+  },
+  {
+    id: "19",
+    title: "Mejores momentos de gimnasia artística",
+    url: "https://www.youtube.com/watch?v=video19",
+    rating: 4.8,
+    comments: [
+      "La flexibilidad y la fuerza en este deporte son asombrosas.",
+      "Estos atletas hacen que parezca fácil.",
+    ],
+    thumbnail: "https://picsum.photos/id/1035/200/300",
+  },
+  {
+    id: "20",
+    title: "Resumen de la Vuelta a Francia en bicicleta",
+    url: "https://www.youtube.com/watch?v=video20",
+    rating: 4.2,
+    comments: [
+      "Qué resistencia tienen estos ciclistas.",
+      "La Vuelta a Francia es una prueba épica.",
+    ],
+    thumbnail: "https://picsum.photos/id/1036/200/300",
+  },
+];

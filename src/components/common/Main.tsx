@@ -6,11 +6,5 @@ interface MainProps {
   children?: ReactNode;
 }
 export const Main = ({ children }: MainProps) => {
-  return (
-    <main>
-      <Card className="min-h-screen m-10">
-        <CardBody className="p-10">{children}</CardBody>
-      </Card>
-    </main>
-  );
+  return <main className="min-h-screen m-10">{children}</main>;
 };
