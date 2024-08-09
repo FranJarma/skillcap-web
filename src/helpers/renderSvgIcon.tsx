@@ -6,7 +6,7 @@ import {
     Tiktok,
     WhatsApp,
     Youtube,
-} from "@/ui/icons";
+} from "@/components/ui/Icons";
 
 interface IconComponents {
     [key: string]: (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
@@ -45,5 +45,5 @@ export const renderSvg = (
         return null;
     }
 
-    return <IconComponent width={width} height={height} color={color} />;
+    return <IconComponent color={color} height={height} width={width} />;
 };

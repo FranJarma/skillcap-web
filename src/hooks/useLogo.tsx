@@ -1,7 +1,8 @@
-import {useTheme} from "next-themes";
+import React from "react";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import {useTheme} from "next-themes";
 
 export const useLogo = (width = 100, height = 100) => {
     const {theme} = useTheme();
@@ -10,10 +11,10 @@ export const useLogo = (width = 100, height = 100) => {
             <Link href="/">
                 <Image
                     priority
-                    width={width}
+                    alt="Logo Skillcap"
                     height={height}
                     src="/LogoWhite.png"
-                    alt="Logo Skillcap"
+                    width={width}
                 />
             </Link>
         );
@@ -24,10 +25,10 @@ export const useLogo = (width = 100, height = 100) => {
             <Link href="/">
                 <Image
                     priority
-                    width={width}
+                    alt="Logo Skillcap"
                     height={height}
                     src="/Logo.png"
-                    alt="Logo Skillcap"
+                    width={width}
                 />
             </Link>
         );

@@ -1,5 +1,6 @@
 "use client";
-import React, {ReactNode} from "react";
+import React from "react";
+
 import {
     Navbar,
     NavbarBrand,
@@ -8,22 +9,17 @@ import {
     Link,
     Button,
     NavbarMenuToggle,
-    useDisclosure,
 } from "@nextui-org/react";
-import {ThemeSwitcher} from "./ThemeSwitcher";
-import {Sidebar} from "./Sidebar";
-import {menuItems} from "./interfaces/MenuItem";
-import {scrollIntoView} from "@/helpers/index";
-import {useLogo} from "@/hooks/index";
 
-interface HeaderProps {
-    children?: ReactNode;
-    showMenuItems?: boolean;
-}
+import {Sidebar, ThemeSwitcher} from "@/components/ui";
+import {menuItems} from "@/components/ui/MenuItem/MenuItem";
+import {scrollIntoView} from "@/helpers/";
+import {useLogo} from "@/hooks/";
+
+import {HeaderProps} from "./HeaderTypes";
 
 export const Header = ({children, showMenuItems = true}: HeaderProps) => {
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    const {isOpen, onOpen, onOpenChange} = useDisclosure();
+    const [isMenuOpen] = React.useState(false);
 
     return (
         <>
@@ -41,8 +37,8 @@ export const Header = ({children, showMenuItems = true}: HeaderProps) => {
                             <div className="hidden min-[1024px]:flex gap-4 min-h-full">
                                 {menuItems.map((item, index) => (
                                     <NavbarItem
-                                        className="flex border-teal-600 hover:border-b-2"
                                         key={`${item}-${index}`}
+                                        className="flex border-teal-600 hover:border-b-2"
                                     >
                                         <Link
                                             className="text-center justify-center items-center"
@@ -63,9 +59,9 @@ export const Header = ({children, showMenuItems = true}: HeaderProps) => {
                         {showMenuItems && (
                             <Button color="primary">
                                 <Link
-                                    type="button"
                                     className="text-foreground-50"
                                     href="#cta"
+                                    type="button"
                                     onClick={scrollIntoView}
                                 >
                                     Quiero contratar el servicio

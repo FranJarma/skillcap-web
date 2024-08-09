@@ -1,7 +1,9 @@
 import React, {ReactNode} from "react";
-import {Seo, SeoComponent} from "./Seo";
+
+import {Footer, Header} from "@/components/ui";
+
 import {Main} from "./Main";
-import {Footer, Header} from "@/ui";
+import {Seo, SeoComponent} from "./Seo";
 
 interface LayoutProps {
     children?: ReactNode;
@@ -10,7 +12,7 @@ interface LayoutProps {
 export const Layout = ({children, seo}: LayoutProps) => {
     return (
         <React.Fragment>
-            <SeoComponent title={seo?.title} description={seo?.description} />
+            <SeoComponent description={seo?.description} title={seo?.title} />
             <Header />
             <h1 className="hidden">{seo?.title}</h1>
             <Main>{children}</Main>

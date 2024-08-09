@@ -1,13 +1,10 @@
 "use client";
 
 import React, {useState} from "react";
+
 import {Card, CardBody, Skeleton} from "@nextui-org/react";
-import {Slider} from "@/ui/Slider";
-import {useInView} from "react-intersection-observer";
-import ClubNorte from "public/ClubNorte.png";
-import IlCalcio from "public/IlCalcio.png";
 import Image from "next/image";
-import Sporting from "public/Sporting.png";
+import {useInView} from "react-intersection-observer";
 
 export const Clients = () => {
     const [ref, inView] = useInView({
@@ -22,33 +19,33 @@ export const Clients = () => {
 
     const clients = [
         {
-            name: "Club Norte",
             address: "Av. del Bicentenario de la Batalla de Salta 2500, Salta",
-            image: ClubNorte,
+            imageSrc: "/ClubNorte.png",
+            name: "Club Norte",
         },
         {
-            name: "Il Calcio",
             address: "Los Alamos s/n, Salta",
-            image: IlCalcio,
+            imageSrc: "/IlCalcio.png",
+            name: "Il Calcio",
         },
         {
-            name: "Sporting",
             address: "Los Cebiles 274, Salta",
-            image: Sporting,
+            imageSrc: "/Sporting.png",
+            name: "Sporting",
         },
     ];
 
     return (
         <div ref={ref}>
             <section
-                id="clients"
                 className={`flex flex-col ${inView ? "inline animate-fade animate-once animate-ease-in-out" : "hidden"} md:flex-row justify-between m-20`}
+                id="clients"
             >
                 <section className="flex flex-col justify-center items-center gap-10 md:m-20">
                     <h2 className="text-3xl md:text-5xl font-bold text-center">
                         Nuestros clientes
                     </h2>
-                    <Slider>
+                    <section>
                         {clients.map((client) => (
                             <React.Fragment key={client.name}>
                                 <Card
@@ -66,10 +63,10 @@ export const Clients = () => {
                                                         <Image
                                                             alt="Album cover"
                                                             className="rounded-2xl opacity-50 hover:scale-105 duration-500 hover:opacity-100"
-                                                            src={
-                                                                client.image.src
-                                                            }
                                                             height={1000}
+                                                            src={
+                                                                client.imageSrc
+                                                            }
                                                             width={760}
                                                         />
                                                     </Skeleton>
@@ -99,7 +96,7 @@ export const Clients = () => {
                                 </Card>
                             </React.Fragment>
                         ))}
-                    </Slider>
+                    </section>
                 </section>
             </section>
         </div>

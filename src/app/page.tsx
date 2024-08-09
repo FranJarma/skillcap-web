@@ -1,4 +1,3 @@
-import {Footer, Header} from "@/ui";
 import {
     Cta,
     Heading,
@@ -6,6 +5,7 @@ import {
     Ubication,
     WhoWeAre,
 } from "@/components/landing";
+import {Footer, Header} from "@/components/ui";
 
 export default function Home() {
     return (

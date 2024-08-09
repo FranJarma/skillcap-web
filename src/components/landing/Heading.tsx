@@ -1,8 +1,9 @@
 "use client";
-import {Button, Link} from "@nextui-org/react";
-import HeadingImage from "./../../../public/HeadingImage.jpg";
-import Image from "next/image";
 import React, {useEffect, useState} from "react";
+
+import {Button, Link} from "@nextui-org/react";
+import Image from "next/image";
+
 import {Icons, renderSvg} from "@/helpers";
 
 export const Heading = () => {
@@ -34,8 +35,8 @@ export const Heading = () => {
         <>
             <section className="fixed z-10 bottom-5 right-5">
                 <Link
-                    target="_blank"
                     href="https://api.whatsapp.com/send?phone=543874450922&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20Skillcap!%20%F0%9F%93%B8"
+                    target="_blank"
                 >
                     {renderSvg(Icons.WhatsApp, 60, 60)}
                 </Link>
@@ -53,20 +54,22 @@ export const Heading = () => {
                         que mejores tu desempeño como deportista.
                     </p>
                     <Button
-                        size="lg"
-                        className="rounded-md p-7 mt-5 text-xl"
                         as={Link}
+                        className="rounded-md p-7 mt-5 text-xl"
                         color="primary"
                         href="/videos"
+                        size="lg"
                     >
                         Ver videos
                     </Button>
                 </article>
                 <picture className="hidden lg:block aspect-square">
                     <Image
-                        className="opacity-60 h-full"
-                        src={HeadingImage}
                         alt="Freepik image"
+                        className="opacity-60 h-full"
+                        height={1500}
+                        src="/HeadingImage.jpg"
+                        width={1000}
                     />
                 </picture>
             </section>

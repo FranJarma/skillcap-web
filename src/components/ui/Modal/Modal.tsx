@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
     Modal,
     ModalContent,
@@ -6,7 +7,6 @@ import {
     ModalBody,
     ModalFooter,
     Button,
-    useDisclosure,
 } from "@nextui-org/react";
 
 interface ModalProps {
@@ -24,17 +24,17 @@ export const ModalComponent = (props: ModalProps) => {
         <div className={className}>
             <Button
                 className="uppercase mr-auto"
-                size="sm"
                 color="primary"
+                size="sm"
                 onPress={onOpen}
             >
                 {text}
             </Button>
             <Modal
-                isOpen={isOpen}
-                onOpenChange={onOpenChange}
                 isDismissable={false}
                 isKeyboardDismissDisabled={true}
+                isOpen={isOpen}
+                onOpenChange={onOpenChange}
             >
                 <ModalContent>
                     {(onClose) => (

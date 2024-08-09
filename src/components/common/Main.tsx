@@ -1,5 +1,4 @@
 "use client";
-import {Card, CardBody} from "@nextui-org/react";
 import React, {ReactNode} from "react";
 
 interface MainProps {

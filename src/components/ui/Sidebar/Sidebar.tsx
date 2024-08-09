@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
-import {menuItems} from "./interfaces/MenuItem";
+
 import {Link, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
+
+import {menuItems} from "@/components/ui/MenuItem/MenuItem";
 
 export const Sidebar = () => {
     return (
@@ -9,8 +11,8 @@ export const Sidebar = () => {
             <aside className="p-10 m-10 text-center justify-center">
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem
-                        className="hover:bg-primary"
                         key={`${item}-${index}`}
+                        className="hover:bg-primary"
                     >
                         <Link
                             className="w-full p-5 hover:text-primary-foreground"

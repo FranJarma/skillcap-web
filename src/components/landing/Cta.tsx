@@ -1,22 +1,23 @@
 "use client";
 
+import React, {useMemo, useState} from "react";
+
 import {Button} from "@nextui-org/react";
 import Image from "next/image";
-import React, {useMemo, useState} from "react";
-import FootballField from "public/FootballField.jpg";
 import {useInView} from "react-intersection-observer";
-import {useTheme} from "next-themes";
-import {Check} from "@/ui/icons/index";
-import {Control, Form, FormData, Type} from "../ui";
+
+import {Form} from "@/components/ui";
+import {Control, FormData, Type} from "@/components/ui/Form/";
+import {Check} from "@/components/ui/Icons/";
+
 export const Cta = () => {
-    const {theme} = useTheme();
     const [ref, inView] = useInView({
         triggerOnce: true,
     });
 
     const [infoSent, setInfoSent] = useState(false);
 
-    const handleinfoSent = () => {
+    const handleInfoSet = () => {
         setInfoSent(true);
     };
 
@@ -61,15 +62,16 @@ export const Cta = () => {
     return (
         <div ref={ref}>
             <section
-                id="cta"
                 className={`flex bg-foreground-50 md:min-h-[1000px] ${inView ? "inline animate-fade animate-once animate-ease-in-out" : "invisible"}`}
+                id="cta"
             >
                 <picture className="hidden lg:block aspect-video">
                     <Image
-                        className="opacity-60 h-full"
-                        width={1200}
-                        src={FootballField}
                         alt="master1305 freepik image"
+                        className="opacity-60 h-full"
+                        height={1000}
+                        src="/FootballField.jpg"
+                        width={1200}
                     />
                 </picture>
                 <section className="flex flex-col justify-center items-center gap-10 m-20 text-clip tracking-normal min-h-full">
@@ -83,7 +85,7 @@ export const Cta = () => {
                             className={`w-full p-14 animate-fade animate-once animate-ease-in-out`}
                         >
                             <p className="text-lg flex justify-center align-center text-center gap-5">
-                                <Check width={25} height={25} />
+                                <Check height={25} width={25} />
                                 Recibimos tus datos, nos comunicaremos muy
                                 pronto
                             </p>
@@ -97,9 +99,9 @@ export const Cta = () => {
                             <Form data={formData} />
                             <Button
                                 className="w-full"
-                                isDisabled={infoSent}
                                 color="primary"
-                                onClick={handleinfoSent}
+                                isDisabled={infoSent}
+                                onClick={handleInfoSet}
                             >
                                 Enviar
                             </Button>

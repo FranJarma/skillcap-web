@@ -1,4 +1,5 @@
-import React, {FC, useMemo} from "react";
+import React, {FC} from "react";
+
 import {VideoCard} from "./VideoCard";
 
 export interface Video {

@@ -1,26 +1,16 @@
 "use client";
 import React, {useEffect, useState} from "react";
+
+import {Card, CardBody, Skeleton} from "@nextui-org/react";
 import Image from "next/image";
-import CameraInstallation from "./../../../public/CameraInstallation.jpg";
-import MobileApp from "./../../../public/MobileApp.png";
-import MonthlySuscription from "./../../../public/MonthlySuscription.jpg";
-import SocialMedia from "./../../../public/SocialMedia.jpg";
-import Rating from "./../../../public/Rating.jpg";
-import Trophy from "./../../../public/Trophy.jpg";
 import {useInView} from "react-intersection-observer";
-import {Card, CardBody, Skeleton, toggle} from "@nextui-org/react";
-import {useSmallScreen} from "@/hooks/useSmallScreen";
+
 export const Services = () => {
     const [ref, inView] = useInView({
         triggerOnce: true,
     });
-    const isSmallScreen = useSmallScreen(1024);
 
     const [isLoaded, setIsLoaded] = useState(false);
-
-    // setTimeout(() => {
-    //   setIsLoaded(true);
-    // }, 5000)
 
     useEffect(() => {
         setTimeout(() => {
@@ -30,53 +20,53 @@ export const Services = () => {
 
     const services = [
         {
-            img: CameraInstallation,
             alt: "Camera Installation image",
-            name: "Instalación de cámaras",
             description:
                 "Colaboramos con dueños de canchas deportivas para instalar cámaras fijas de alta calidad. Esto no solo enriquece su negocio, sino que también te brinda la oportunidad de adquirir grabaciones de tus partidos directamente desde nuestra aplicación. Puedes pagar de manera sencilla y tener acceso instantáneo.",
+            img: "/CameraInstallation.jpg",
+            name: "Instalación de cámaras",
         },
         {
-            img: MobileApp,
             alt: "Mobile App image",
-            name: "Aplicación móvil",
             description:
                 "Ofrecemos un acceso en línea a tus momentos más importantes en el deporte. Ya sea que estés en la cancha de fútbol, baloncesto o paddle, capturamos cada jugada y cada gol para que puedas revisar y mejorar tu desempeño desde la comodidad de tu dispositivo.",
+            img: "/MobileApp.png",
+            name: "Aplicación móvil",
         },
         {
-            img: MonthlySuscription,
             alt: "Monthly Suscription image",
-            name: "Suscripción mensual para deportistas",
             description:
                 "Para aquellos que desean entrenar aún más duro, ofrecemos una suscripción mensual que te permite utilizar nuestro servicio de manera ilimitada. Ya no tienes que preocuparte por el costo adicional cada vez que juegas.",
+            img: "/MonthlySuscription.jpg",
+            name: "Suscripción mensual para deportistas",
         },
         {
-            img: SocialMedia,
             alt: "Social Media image",
-            name: "Marketing por redes sociales",
             description:
                 "No solo queremos ayudarte a mejorar en el campo, sino también a destacarte en las redes y en tu comunidad. Ofrecemos servicios de fotografía premium para equipos y producciones de video para aquellos que buscan un toque profesional en sus partidos y eventos deportivos.",
+            img: "/SocialMedia.jpg",
+            name: "Marketing por redes sociales",
         },
         {
-            img: Trophy,
             alt: "Handling trophy image",
-            name: "Creación de torneos",
             description:
                 "Los dueños de cancha podrán crear torneos, de tal forma que los jugadores puedan acceder a ellos e inscribirse y poder así participar de miles de beneficios y premios.",
+            img: "/Trophy.jpg",
+            name: "Creación de torneos",
         },
         {
-            img: Rating,
             alt: "Rating image",
-            name: "Votaciones",
             description:
                 "Los jugadores tendrán la posibilidad de votar mejores goles, mejores jugadas y poder así compartirlas en sus redes sociales.",
+            img: "/Rating.jpg",
+            name: "Votaciones",
         },
     ];
     return (
         <div ref={ref}>
             <section
-                id="services"
                 className={`flex flex-col ${inView ? "inline animate-fade animate-once animate-ease-in-out" : "invisible"} m-10 md:m-40`}
+                id="services"
             >
                 <section className="flex flex-col justify-center items-center gap-10">
                     <h2 className="text-3xl md:text-5xl font-bold text-center">
@@ -85,10 +75,10 @@ export const Services = () => {
                     <section className="grid gap-10 grid-cols-1 xl:grid-cols-2">
                         {services.map((service) => (
                             <React.Fragment key={service.name}>
-                                {/* <Slider></Slider> */}
                                 <Card
                                     isBlurred
-                                    className="border-none bg-background/60 dark:bg-foreground-100 max-w-[610px]"
+                                    isPressable
+                                    className="border-none cursor-pointer rounded-md bg-background/60 dark:bg-foreground-100 max-w-[610px]"
                                     shadow="sm"
                                 >
                                     <CardBody>
@@ -100,12 +90,10 @@ export const Services = () => {
                                                     >
                                                         <Image
                                                             alt="Album cover"
-                                                            className="object-cover min-h-fit w-screen rounded-2xl opacity-50 hover:scale-105 duration-500 hover:opacity-100 md:h-96"
-                                                            src={
-                                                                service.img.src
-                                                            }
-                                                            sizes="100vw"
+                                                            className="object-cover min-h-fit w-screen opacity-50 hover:scale-105 duration-500 hover:opacity-100 md:h-96"
                                                             height={100}
+                                                            sizes="100vw"
+                                                            src={service.img}
                                                             width={100}
                                                         />
                                                     </Skeleton>

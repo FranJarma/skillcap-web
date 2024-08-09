@@ -1,5 +1,6 @@
-import Head from "next/head";
 import React from "react";
+
+import Head from "next/head";
 
 export interface Seo {
     title?: string;
@@ -11,7 +12,7 @@ export const SeoComponent = (props: Seo) => {
         <React.Fragment>
             <Head>
                 <title>{props.title}</title>
-                <meta name="description" content={props.description}></meta>
+                <meta content={props.description} name="description"></meta>
             </Head>
         </React.Fragment>
     );

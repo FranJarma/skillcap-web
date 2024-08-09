@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-import Link from "next/link";
+
 import {Button} from "@nextui-org/react";
+import Link from "next/link";
 import {useInView} from "react-intersection-observer";
 
 export const WhoWeAre = () => {
@@ -12,8 +13,8 @@ export const WhoWeAre = () => {
     return (
         <div ref={ref}>
             <section
-                id="quienes-somos"
                 className={`flex flex-col justify-items-center ${inView ? "inline animate-fade animate-once animate-ease-in-out" : "invisible"} md:flex-row bg-foreground-50`}
+                id="who-we-are"
             >
                 <section className="flex flex-col gap-10 text-clip m-10 md:m-48">
                     <h2 className="text-4xl lg:text-5xl !leading-snug font-bold">
@@ -29,10 +30,10 @@ export const WhoWeAre = () => {
                         a tu lado para ofrecerte el apoyo visual que necesitas.
                     </p>
                     <Button
-                        className="rounded-sm w-full p-8 text-sm md:text-xl"
                         as={Link}
+                        className="rounded-sm w-full p-8 text-sm md:text-xl"
                         color="primary"
-                        href="/quienes-somos"
+                        href="/who-we-are"
                     >
                         Más acerca de nosotros
                     </Button>

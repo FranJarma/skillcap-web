@@ -1,5 +1,6 @@
-import {Footer, Header} from "@/ui";
 import React from "react";
+
+import {Footer, Header} from "@/components/ui";
 
 const Ubication = () => {
     return (

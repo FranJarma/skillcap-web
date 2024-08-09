@@ -1,21 +1,20 @@
 "use client";
+import React, {useMemo} from "react";
+
 import {Layout} from "@/components/common/Layout";
 import {VideoList} from "@/components/videos/VideoList";
 import {videos} from "@/data/videos";
-import React, {useMemo} from "react";
 
 const seo = {
-    title: `Observe todos sus videos utilizando Skillcap`,
     description:
         "Disfruta de los mejores videos deportivos en tiempo real en Skillcap. Encuentra tus momentos favoritos de fútbol, padel, y más.",
+    title: `Observe todos sus videos utilizando Skillcap`,
 };
 
 const Videos = () => {
     const mostVotedVideos = useMemo(() => {
         return videos.filter((video) => parseInt(video.id) <= 10);
     }, []);
-
-    console.log({mostVotedVideos});
 
     const bestGoals = useMemo(() => {
         return videos.filter(
