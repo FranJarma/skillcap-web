@@ -2,18 +2,19 @@ import React, {FC} from "react";
 
 import {VideoCard} from "./VideoCard";
 
-export interface Video {
+export type Video = {
+    categoryId: number;
     id: string;
     title: string;
     url: string;
     rating: number;
     comments: string[];
     thumbnail: string;
-}
+};
 
-interface VideoListProps {
+type VideoListProps = {
     videoList: Video[];
-}
+};
 
 export const VideoList: FC<VideoListProps> = ({videoList}) => {
     return (

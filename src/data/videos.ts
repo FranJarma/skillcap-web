@@ -2,6 +2,7 @@ import {Video} from "@/components/videos/VideoList";
 
 export const videos: Video[] = [
     {
+        categoryId: 1,
         comments: [
             "¡Increíble gol!",
             "Este video es inspirador.",
@@ -14,6 +15,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video1",
     },
     {
+        categoryId: 1,
         comments: [
             "El mejor partido de la temporada.",
             "Qué emoción en cada jugada.",
@@ -25,6 +27,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video2",
     },
     {
+        categoryId: 1,
         comments: [
             "Esos goles son increíbles.",
             "Los jugadores están en su mejor momento.",
@@ -36,6 +39,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video3",
     },
     {
+        categoryId: 1,
         comments: [
             "Estos jugadores son impresionantes.",
             "El baloncesto es mi deporte favorito.",
@@ -47,6 +51,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video4",
     },
     {
+        categoryId: 2,
         comments: [
             "Los puntos de este partido fueron épicos.",
             "Me encanta ver tenis.",
@@ -58,6 +63,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video5",
     },
     {
+        categoryId: 2,
         comments: [
             "Los equipos dieron todo en el campo.",
             "El rugby es un deporte duro pero emocionante.",
@@ -69,6 +75,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video6",
     },
     {
+        categoryId: 2,
         comments: [
             "Qué precisión en cada clavado.",
             "Estos atletas son increíbles.",
@@ -80,6 +87,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video7",
     },
     {
+        categoryId: 2,
         comments: [
             "Los récords que se rompieron fueron asombrosos.",
             "El atletismo es inspirador.",
@@ -91,6 +99,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video8",
     },
     {
+        categoryId: 2,
         comments: [
             "Cada jugada fue crucial.",
             "El cricket es un deporte fascinante.",
@@ -102,6 +111,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video9",
     },
     {
+        categoryId: 2,
         comments: [
             "Estos jugadores tienen un gran trabajo en equipo.",
             "El voleibol es rápido y emocionante.",
@@ -113,6 +123,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video10",
     },
     {
+        categoryId: 2,
         comments: [
             "Las olas en este video son épicas.",
             "El surf es mi pasión.",
@@ -124,6 +135,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video11",
     },
     {
+        categoryId: 2,
         comments: [
             "Qué habilidades tienen estos jugadores.",
             "El hockey sobre hielo es emocionante de ver.",
@@ -135,6 +147,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video12",
     },
     {
+        categoryId: 2,
         comments: [
             "Este juego fue lleno de acción.",
             "El béisbol siempre es emocionante.",
@@ -146,6 +159,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video13",
     },
     {
+        categoryId: 2,
         comments: [
             "Qué precisión tienen estos jugadores.",
             "El balonmano es un deporte subestimado pero emocionante.",
@@ -157,6 +171,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video14",
     },
     {
+        categoryId: 1,
         comments: [
             "La estrategia en este deporte es fascinante.",
             "Estos atletas son increíbles con la espada.",
@@ -168,6 +183,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video15",
     },
     {
+        categoryId: 1,
         comments: [
             "Qué precisión en cada golpe.",
             "El golf es un deporte lleno de habilidad.",
@@ -179,6 +195,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video16",
     },
     {
+        categoryId: 1,
         comments: [
             "Los clavados en este video son impresionantes.",
             "El trampolín requiere mucha habilidad.",
@@ -190,6 +207,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video17",
     },
     {
+        categoryId: 1,
         comments: [
             "Qué valentía tienen estos esquiadores.",
             "Los saltos en esquí son emocionantes de ver.",
@@ -201,6 +219,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video18",
     },
     {
+        categoryId: 1,
         comments: [
             "La flexibilidad y la fuerza en este deporte son asombrosas.",
             "Estos atletas hacen que parezca fácil.",
@@ -212,6 +231,7 @@ export const videos: Video[] = [
         url: "https://www.youtube.com/watch?v=video19",
     },
     {
+        categoryId: 1,
         comments: [
             "Qué resistencia tienen estos ciclistas.",
             "La Vuelta a Francia es una prueba épica.",

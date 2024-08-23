@@ -2,20 +2,15 @@ import React, {ReactNode} from "react";
 
 import {Footer, Header} from "@/components/ui";
 
-import {Main} from "./Main";
-import {Seo, SeoComponent} from "./Seo";
-
-interface LayoutProps {
+type LayoutProps = {
     children?: ReactNode;
-    seo?: Seo;
-}
-export const Layout = ({children, seo}: LayoutProps) => {
+    showHeaderItems?: boolean;
+};
+export const Layout = ({children, showHeaderItems}: LayoutProps) => {
     return (
         <React.Fragment>
-            <SeoComponent description={seo?.description} title={seo?.title} />
-            <Header />
-            <h1 className="hidden">{seo?.title}</h1>
-            <Main>{children}</Main>
+            <Header showHeaderItems={showHeaderItems} />
+            <main className="min-h-screen m-10">{children}</main>
             <Footer />
         </React.Fragment>
     );

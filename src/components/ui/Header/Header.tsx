@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import * as React from "react";
 
 import {
     Navbar,
@@ -12,17 +12,18 @@ import {
 } from "@nextui-org/react";
 
 import {Sidebar, ThemeSwitcher} from "@/components/ui";
-import {menuItems} from "@/components/ui/MenuItem/MenuItem";
 import {scrollIntoView} from "@/helpers/";
 import {useLogo} from "@/hooks/";
 
+import {HeaderItems} from "./HeaderItems";
 import {HeaderProps} from "./HeaderTypes";
 
-export const Header = ({children, showMenuItems = true}: HeaderProps) => {
+export const Header: React.FC<HeaderProps> = ({showHeaderItems = true}) => {
     const [isMenuOpen] = React.useState(false);
+    const logo = useLogo();
 
     return (
-        <>
+        <React.Fragment>
             <Navbar isBordered>
                 <NavbarContent justify="center">
                     <NavbarMenuToggle
@@ -30,33 +31,13 @@ export const Header = ({children, showMenuItems = true}: HeaderProps) => {
                         className="min-[1024px]:hidden"
                     />
                     <NavbarBrand className="hidden md:block">
-                        {useLogo()}
+                        {logo}
                     </NavbarBrand>
-                    {showMenuItems && (
-                        <div className="hidden min-[1024px]:flex gap-4 min-h-full">
-                            <div className="hidden min-[1024px]:flex gap-4 min-h-full">
-                                {menuItems.map((item, index) => (
-                                    <NavbarItem
-                                        key={`${item}-${index}`}
-                                        className="flex border-teal-600 hover:border-b-2"
-                                    >
-                                        <Link
-                                            className="text-center justify-center items-center"
-                                            color="foreground"
-                                            href={item.href}
-                                            onClick={scrollIntoView}
-                                        >
-                                            {item.label}
-                                        </Link>
-                                    </NavbarItem>
-                                ))}
-                            </div>
-                        </div>
-                    )}
+                    {showHeaderItems && <HeaderItems />}
                 </NavbarContent>
                 <NavbarContent justify="end">
                     <NavbarItem className="flex gap-4">
-                        {showMenuItems && (
+                        {showHeaderItems && (
                             <Button color="primary">
                                 <Link
                                     className="text-foreground-50"
@@ -73,7 +54,6 @@ export const Header = ({children, showMenuItems = true}: HeaderProps) => {
                 </NavbarContent>
                 <Sidebar />
             </Navbar>
-            {children}
-        </>
+        </React.Fragment>
     );
 };

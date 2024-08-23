@@ -1,16 +1,13 @@
 import React from "react";
 
-import {Footer, Header} from "@/components/ui";
+import {Layout} from "@/components/common/Layout";
 
 const Services = () => {
     return (
         <React.Fragment>
-            <Header showMenuItems={false}>
-                <main>
-                    <h1>Services</h1>
-                </main>
-            </Header>
-            <Footer />
+            <Layout>
+                <h1>Services</h1>
+            </Layout>
         </React.Fragment>
     );
 };

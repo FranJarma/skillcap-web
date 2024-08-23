@@ -5,6 +5,17 @@ export type FooterItem = {
     targetBlank?: boolean;
 };
 
-export type FooterList = {
+export type FooterItems = {
     items: FooterItem[];
+};
+
+export type FooterMobileProps = {
+    title: string;
+    items: FooterItems["items"];
+    id: string;
+};
+
+export type FooterDesktopProps = {
+    title: string;
+    items: FooterItems["items"];
 };
