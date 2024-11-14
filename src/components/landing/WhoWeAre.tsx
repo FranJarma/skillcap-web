@@ -31,7 +31,7 @@ export const WhoWeAre = () => {
                     </p>
                     <Button
                         as={Link}
-                        className="rounded-sm w-full p-8 text-sm md:text-xl"
+                        className="rounded-sm p-8 text-sm md:text-xl"
                         color="primary"
                         href="/who-we-are"
                     >

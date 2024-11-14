@@ -5,7 +5,8 @@ import {
     Ubication,
     WhoWeAre,
 } from "@/components/landing";
-import {Footer, Header} from "@/components/ui";
+import Footer from "@/components/ui/Footer/Footer";
+import Header from "@/components/ui/Header/Header";
 
 export default function Home() {
     return (

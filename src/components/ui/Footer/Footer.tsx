@@ -6,7 +6,7 @@ import {useSmallScreen} from "@/hooks/useSmallScreen";
 import {FooterDesktop} from "./FooterDesktop";
 import {FooterMobile} from "./FooterMobile";
 
-export const Footer: React.FC = () => {
+const Footer: React.FC = () => {
     const isSmallScreen = useSmallScreen(1024);
 
     return (
@@ -23,3 +23,5 @@ export const Footer: React.FC = () => {
         </React.Fragment>
     );
 };
+
+export default Footer;

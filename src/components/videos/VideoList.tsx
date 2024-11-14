@@ -1,4 +1,8 @@
+"use client";
+
 import React, {FC} from "react";
+
+import {Skeleton} from "@nextui-org/react";
 
 import {VideoCard} from "./VideoCard";
 
@@ -17,11 +21,19 @@ type VideoListProps = {
 };
 
 export const VideoList: FC<VideoListProps> = ({videoList}) => {
+    const [isLoaded, setIsLoaded] = React.useState(false);
+
+    setTimeout(() => {
+        setIsLoaded(true);
+    }, 5000);
+
     return (
-        <ul className="grid grid-cols-3">
+        <ul className="grid grid-cols-1 gap-4 xl:grid-cols-2">
             {videoList.map((video: Video) => (
                 <React.Fragment key={video.id}>
-                    <VideoCard {...video} />
+                    <Skeleton isLoaded={isLoaded}>
+                        <VideoCard {...video} />
+                    </Skeleton>
                 </React.Fragment>
             ))}
         </ul>

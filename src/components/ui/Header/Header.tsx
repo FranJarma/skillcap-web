@@ -18,7 +18,7 @@ import {useLogo} from "@/hooks/";
 import {HeaderItems} from "./HeaderItems";
 import {HeaderProps} from "./HeaderTypes";
 
-export const Header: React.FC<HeaderProps> = ({showHeaderItems = true}) => {
+const Header: React.FC<HeaderProps> = ({showHeaderItems = true}) => {
     const [isMenuOpen] = React.useState(false);
     const logo = useLogo();
 
@@ -57,3 +57,5 @@ export const Header: React.FC<HeaderProps> = ({showHeaderItems = true}) => {
         </React.Fragment>
     );
 };
+
+export default Header;

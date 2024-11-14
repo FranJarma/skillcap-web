@@ -42,8 +42,8 @@ export const Heading = () => {
                 </Link>
             </section>
             <section className="flex justify-between bg-foreground-50 h-screen">
-                <article className="flex flex-col justify-center items-center gap-10 m-20 text-clip tracking-normal">
-                    <h2 className="text-4xl lg:text-5xl !leading-snug font-bold tracking-wide">
+                <article className="flex flex-col justify-center items-center gap-10 m-12">
+                    <h2 className="text-5xl !leading-snug font-bold text-center md:text-left">
                         ¿En búsqueda de mejorar tu{" "}
                         <span className="bg-teal-700 text-white">
                             rendimiento deportivo?
@@ -55,7 +55,7 @@ export const Heading = () => {
                     </p>
                     <Button
                         as={Link}
-                        className="rounded-md p-7 mt-5 text-xl"
+                        className="rounded-md p-7 mt-5 text-xl w-full"
                         color="primary"
                         href="/videos"
                         size="lg"

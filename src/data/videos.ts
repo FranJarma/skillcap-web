@@ -12,7 +12,7 @@ export const videos: Video[] = [
         rating: 4.5,
         thumbnail: "https://picsum.photos/id/1018/200/300",
         title: "Mejores jugadas de fútbol",
-        url: "https://www.youtube.com/watch?v=video1",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 1,
@@ -24,7 +24,7 @@ export const videos: Video[] = [
         rating: 4.7,
         thumbnail: "https://picsum.photos/id/1015/200/300",
         title: "Resumen de la final de la Champions League",
-        url: "https://www.youtube.com/watch?v=video2",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 1,
@@ -36,7 +36,7 @@ export const videos: Video[] = [
         rating: 4.2,
         thumbnail: "https://picsum.photos/id/1019/200/300",
         title: "Mejores goles del año",
-        url: "https://www.youtube.com/watch?v=video3",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 1,
@@ -48,7 +48,7 @@ export const videos: Video[] = [
         rating: 4.0,
         thumbnail: "https://picsum.photos/id/1020/200/300",
         title: "Recopilación de jugadas de baloncesto",
-        url: "https://www.youtube.com/watch?v=video4",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 2,
@@ -60,7 +60,7 @@ export const videos: Video[] = [
         rating: 4.3,
         thumbnail: "https://picsum.photos/id/1021/200/300",
         title: "Los mejores momentos de tenis",
-        url: "https://www.youtube.com/watch?v=video5",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 2,
@@ -72,7 +72,7 @@ export const videos: Video[] = [
         rating: 4.6,
         thumbnail: "https://picsum.photos/id/1022/200/300",
         title: "Resumen de la Liga de Campeones de Rugby",
-        url: "https://www.youtube.com/watch?v=video6",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 2,
@@ -84,7 +84,7 @@ export const videos: Video[] = [
         rating: 4.4,
         thumbnail: "https://picsum.photos/id/1023/200/300",
         title: "Los mejores clavados en natación",
-        url: "https://www.youtube.com/watch?v=video7",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 2,
@@ -96,7 +96,7 @@ export const videos: Video[] = [
         rating: 4.1,
         thumbnail: "https://picsum.photos/id/1024/200/300",
         title: "Mejores momentos de atletismo",
-        url: "https://www.youtube.com/watch?v=video8",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 2,
@@ -108,7 +108,7 @@ export const videos: Video[] = [
         rating: 4.8,
         thumbnail: "https://picsum.photos/id/1025/200/300",
         title: "Resumen de la Copa Mundial de Cricket",
-        url: "https://www.youtube.com/watch?v=video9",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 2,
@@ -120,7 +120,7 @@ export const videos: Video[] = [
         rating: 4.2,
         thumbnail: "https://picsum.photos/id/1026/200/300",
         title: "Mejores momentos de voleibol",
-        url: "https://www.youtube.com/watch?v=video10",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 2,
@@ -132,7 +132,7 @@ export const videos: Video[] = [
         rating: 4.5,
         thumbnail: "https://picsum.photos/id/1027/200/300",
         title: "Recopilación de surf en las mejores olas",
-        url: "https://www.youtube.com/watch?v=video11",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 2,
@@ -144,7 +144,7 @@ export const videos: Video[] = [
         rating: 4.3,
         thumbnail: "https://picsum.photos/id/1028/200/300",
         title: "Mejores jugadas de hockey sobre hielo",
-        url: "https://www.youtube.com/watch?v=video12",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 2,
@@ -156,7 +156,7 @@ export const videos: Video[] = [
         rating: 4.6,
         thumbnail: "https://picsum.photos/id/1029/200/300",
         title: "Resumen de la Liga Nacional de Béisbol",
-        url: "https://www.youtube.com/watch?v=video13",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 2,
@@ -168,7 +168,7 @@ export const videos: Video[] = [
         rating: 4.4,
         thumbnail: "https://picsum.photos/id/1030/200/300",
         title: "Los mejores tiros libres en balonmano",
-        url: "https://www.youtube.com/watch?v=video14",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 1,
@@ -180,7 +180,7 @@ export const videos: Video[] = [
         rating: 4.1,
         thumbnail: "https://picsum.photos/id/1031/200/300",
         title: "Mejores momentos de esgrima",
-        url: "https://www.youtube.com/watch?v=video15",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 1,
@@ -192,7 +192,7 @@ export const videos: Video[] = [
         rating: 4.7,
         thumbnail: "https://picsum.photos/id/1032/200/300",
         title: "Resumen de la Copa del Mundo de Golf",
-        url: "https://www.youtube.com/watch?v=video16",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 1,
@@ -204,7 +204,7 @@ export const videos: Video[] = [
         rating: 4.5,
         thumbnail: "https://picsum.photos/id/1033/200/300",
         title: "Mejores clavados en trampolín",
-        url: "https://www.youtube.com/watch?v=video17",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 1,
@@ -216,7 +216,7 @@ export const videos: Video[] = [
         rating: 4.3,
         thumbnail: "https://picsum.photos/id/1034/200/300",
         title: "Recopilación de saltos en esquí",
-        url: "https://www.youtube.com/watch?v=video18",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 1,
@@ -228,7 +228,7 @@ export const videos: Video[] = [
         rating: 4.8,
         thumbnail: "https://picsum.photos/id/1035/200/300",
         title: "Mejores momentos de gimnasia artística",
-        url: "https://www.youtube.com/watch?v=video19",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
     {
         categoryId: 1,
@@ -240,6 +240,6 @@ export const videos: Video[] = [
         rating: 4.2,
         thumbnail: "https://picsum.photos/id/1036/200/300",
         title: "Resumen de la Vuelta a Francia en bicicleta",
-        url: "https://www.youtube.com/watch?v=video20",
+        url: "https://www.youtube.com/embed/tgbNymZ7vqY?controls=0",
     },
 ];

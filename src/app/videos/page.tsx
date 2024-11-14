@@ -13,18 +13,20 @@ const Videos = () => {
     return (
         <React.Fragment>
             <Layout showHeaderItems={false}>
-                <h2 className="text-2xl text-center uppercase text-teal-300 opacity-100 peer-hover:text-teal-700">
-                    Jugadas más votadas
-                </h2>
-                <VideoList videoList={mostVotedVideos} />
-                <h2 className="text-2xl text-center uppercase text-teal-700 peer hover:text-teal-300">
-                    Mejores goles
-                </h2>
-                <VideoList videoList={bestGoals} />
-                <h2 className="text-2xl text-center uppercase text-teal-700 peer hover:text-teal-300">
-                    Mejores asistencias
-                </h2>
-                <VideoList videoList={bestAssists} />
+                <section className="flex flex-col gap-4">
+                    <h2 className="inline bg-gradient-to-b from-black to-teal-400 text-2xl font-bold">
+                        Jugadas más votadas
+                    </h2>
+                    <VideoList videoList={mostVotedVideos} />
+                    <h2 className="inline bg-gradient-to-b from-black to-teal-400 text-2xl font-bold">
+                        Mejores goles
+                    </h2>
+                    <VideoList videoList={bestGoals} />
+                    <h2 className="inline bg-gradient-to-b from-black to-teal-400 text-2xl font-bold">
+                        Mejores asistencias
+                    </h2>
+                    <VideoList videoList={bestAssists} />
+                </section>
             </Layout>
         </React.Fragment>
     );

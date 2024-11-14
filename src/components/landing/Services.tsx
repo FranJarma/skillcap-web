@@ -90,7 +90,7 @@ export const Services = () => {
                                                     >
                                                         <Image
                                                             alt="Album cover"
-                                                            className="object-cover min-h-fit w-screen opacity-50 hover:scale-105 duration-500 hover:opacity-100 md:h-96"
+                                                            className="object-cover w-screen opacity-50 hover:scale-105 duration-500 hover:opacity-100 md:h-96"
                                                             height={100}
                                                             sizes="100vw"
                                                             src={service.img}
